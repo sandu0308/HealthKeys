@@ -1,0 +1,564 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    font-size: 100%;
+    font-weight: 400;
+    border: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Mulish", sans-serif;
+}
+
+.main_block{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 90px;
+    margin-bottom: 190px;
+}
+
+.main_block .container{
+    width: 1218px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main_block .container header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.main_block .container header menu{
+    display: flex;
+    justify-content: space-between;
+    width: 545px;
+}
+.main_block .container header li a{
+    letter-spacing: 10%;
+    transition: 0.4s;
+    font-size: 18px;
+    color: rgb(125, 121, 135);
+}
+.main_block .container header menu li a:hover{
+    color: rgb(31, 21, 52);
+}
+
+.main_block .container .consult{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 86px;
+}
+
+.main_block .container .consult .text{
+    width: 457px;
+}
+
+.main_block .container .consult h1{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.main_block .container .consult p{
+    color: rgb(125, 121, 135);
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 32px;
+    margin-top: 25px;
+}
+
+
+.main_block .container .consult .whatsapp-button{
+    border-radius: 55px;
+    background: rgb(69, 143, 246);
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 50px;
+}
+/* .main_block .container .consult button .whatsapp-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  } */
+  
+  .whatsapp-button:hover {
+    background-color: #1ebe5d;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+.welcome{
+    width: 100%;
+    padding-top: 20px;
+    margin-top: 190px;
+}
+
+.welcome .container{
+    width: 1240px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.welcome .container .aboutus {
+    margin-left: 36px;
+}
+
+.welcome .container .aboutusp {
+    color: rgb(69, 143, 246);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.welcome .container .aboutus h2{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.welcome .container .aboutus ul{
+    margin-top: 11px;
+    color: rgb(73, 73, 73);
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 9px;
+}
+
+.welcome .container .accordion_item{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.welcome .container .accordion_button{
+    position: relative;
+    padding: 20px;
+    background: rgb(69, 143, 246); 
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.welcome .container .accordion_button ::after{
+    content: "+";
+    position :absolute;
+    top :50%;
+    transform: translateY(50%);
+    right: 20px;
+    font-size: 25px;
+    font-weight:bold ;
+
+
+}
+
+.welcome .container .aboutus .btn{
+    border-radius: 55px;
+    background: rgb(69, 143, 246);
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 50px;
+}
+
+.service{
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 70px;
+    background: linear-gradient(177.42deg, rgb(243, 247, 255) -10.485%,rgb(222, 238, 254) 92.662%);
+}
+
+.service .container{
+    width: 1218px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service .container h1{
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 26px;
+
+}
+
+.service .container .line{
+    width: 56px;
+    height: 2px;
+    border-radius: 5px;
+    background: rgb(0, 0, 0);
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.service .container >p{
+    color: rgb(125, 121, 135);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    width: 952px;
+    height: 90px;
+    margin-right:  auto;
+    margin-left:  auto;
+    margin-top: 60px;
+}
+
+.service .container .our_services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1090px;
+    margin: 35px auto 0;
+  }
+  
+  .service .container .our_services nav {
+    width: 31%;
+    background-color: #ffffff;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    box-shadow: 10px 40px 50px 0 rgba(229, 233, 246, 0.4);
+    padding: 54px 39px 46px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+  }
+  
+ 
+  .service .container .our_services nav:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  .service .container .our_services nav * {
+    transition: none !important;
+  }
+  
+
+
+
+.service .container .our_services nav img{
+    margin-bottom: 22px;
+}
+
+.service .container .our_services nav h2{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.service .container .our_services nav p{
+    color: rgb(125, 121, 135);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.service .container button{
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 55px;
+    font-size: 18px;
+    font-weight: 700;
+    box-sizing: border-box;
+    border: 1.4px solid rgb(69, 143, 246);
+    color: rgb(69, 143, 246);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.service .container input{
+    border-radius: 55px;
+    font-size: 18px;
+    font-weight: 700;
+    box-sizing: border-box;
+    border: 1.4px solid rgb(69, 143, 246);
+    color: rgb(69, 143, 246);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+}
+
+/* .apps{
+    width: 100%;
+    padding-top: 241px;
+}
+
+.apps .container{
+    width: 1337px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.apps .container nav{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.apps .container .photo1{
+    width: 650px;
+    border-radius: inherit ;
+}
+
+.apps .container .photo2{
+    width: 486px;
+}
+
+.apps .container .photo2 h1{
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 56px;
+}
+
+.apps .container p{
+    color: rgb(125, 121, 135);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.apps .container input{
+    border-radius: 55px;
+    font-size: 18px;
+    font-weight: 700;
+    box-sizing: border-box;
+    border: 1.4px solid rgb(69, 143, 246);
+    color: rgb(69, 143, 246);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+}
+ */
+
+.apps{
+    padding-top: 220px;
+        width: 100%;
+}
+
+ .apps .container {
+    width: 1365px;
+    margin: 0 auto;
+}
+
+
+.apps .container nav {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.block1, .block2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.photo1, .photo4, .photo2, .photo3 {
+    flex: 1;
+}
+
+.photo1, .photo4 {
+    max-width: 40%;
+}
+
+.photo1 img, .photo4 img {
+    width: 100%;
+    height: auto;
+}
+
+
+.photo2, .photo3 {
+    max-width: 50%;
+}
+
+.apps .container h2 {
+    color: rgb(0, 0, 0);
+    font-family: Mulish;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+p {
+    color: rgb(125, 121, 135);
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+input[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .block1, .block2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .photo1, .photo4, .photo2, .photo3 {
+        max-width: 100%;
+    }
+}
+
+footer{
+    width: 100%;
+    margin-top: 181px ;
+    padding-top: 124px;
+    padding-bottom: 113px;
+    background: linear-gradient(211.68deg, rgb(103, 195, 243) 8.549%,rgb(90, 152, 242) 70.494%);
+}
+
+footer .container{
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container .healthkeys{
+    display: flex;
+    margin-bottom: 12px;
+}
+
+footer .container .healthkeys h2{
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 700;
+    }
+
+footer .container .healthkeys1 p{
+    color: rgb(255, 255, 255);
+    width: 391px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+    }
+
+footer .container .company{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+footer .container .company h2{
+    color: rgb(255, 255, 255);
+    
+    font-size: 20px;
+    font-weight: 700;
+   margin-bottom: 22px;
+}
+
+footer .container .company li{
+    color: rgb(255, 255, 255);
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 38px;
+}
+
+footer .container .region{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+footer .container .region h2{
+    color: rgb(255, 255, 255);
+    
+    font-size: 20px;
+    font-weight: 700;
+   margin-bottom: 22px;
+}
+
+footer .container .region li{
+    color: rgb(255, 255, 255);
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 38px;
+}
+
+footer .container .help{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+footer .container .help h2{
+    color: rgb(255, 255, 255);
+    
+    font-size: 20px;
+    font-weight: 700;
+   margin-bottom: 22px;
+}
+
+footer .container .help li{
+    color: rgb(255, 255, 255);
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 38px;
+}
