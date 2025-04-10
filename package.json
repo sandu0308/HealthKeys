@@ -8,5 +8,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/твой_логин/имя-репозитория.git"
+  },
+  "bugs": {
+    "url": "https://github.com/твой_логин/имя-репозитория/issues"
+  },
+  "homepage": "https://github.com/твой_логин/имя-репозитория#readme",
   "description": ""
 }
