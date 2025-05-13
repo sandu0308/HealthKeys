@@ -8,114 +8,135 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <link rel="icon" href="img/healthkeys_favicon.ico" type="image/x-icon">
+
+
 </head>
 <body>
     
-    <div class="main_block">
-        <div class="container">
-            <header>
-                <div class="logo">
-                    <a href="#">
-                        <img src="img/logo.svg" alt="logo">
-                    </a>
-                </div>
-                <menu>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Find a doctor</a>
-                    </li>
-                    <li>
-                        <a href="#">Apps</a>
-                    </li>
-                    <li>
-                        <a href="#">Testimonials</a>
-                    </li>
-                    <li>
-                        <a href="#">About us</a>
-                    </li>
-                </menu>
-            </header>
-            <div class="consult">
-                <div class="text">
-                    <h1>Виртуальное медицинское обслуживание для вас</h1>
-                    <p>Советы для здоровья и фитнеса: ключ к активной жизни</p>
-                    <button onclick="goToWhatsApp()" class="whatsapp-button">
-                        Проконсультироваться
-                      </button>
-                      
-                    
-                </div>
-                <div class="photo">
-                    <img src="img/illustration.png" alt="photo">
-                </div>
-        </div>
+      
+  <header>
+    <div class="logo">
+      <a href="#">
+        <img src="img/healthkeys_logo.svg" alt="HealthKeys logo">
+      </a>
+      
     </div>
+  
+    <div class="burger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  
+    <menu id="mainMenu">
+      <li><a href="">Главная</a></li>
+      <li><a href="#" onclick="goToProfile()">Профиль</a></li>
+      <!-- <li><a href="registration.html" id="registrationLink">Регистрация</a></li> -->
+      <li><a href="#about_us">О нас</a></li>
+      <li><a href="#our_services">Наши сервисы</a></li>
+      <li><a href="#fitness">Фитнес и здоровье</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+    </menu>
+  </header>
+  
 
-    <!-- <div class="welcome">
-        <div class="container">
-            <div class="med_woman">
-                <img src="img/medwoman.png" alt="womanpnj">
-            </div>
-            <div class="aboutus">
-                <p class="aboutusp">About us</p>
-                <h2>Добро пожаловать в HealthKeys</h2>
-                <p>Добро пожаловать в HealthKeys! Ваше здоровье – наш главный приоритет. Мы стремимся предоставить качественную медицинскую помощь с    заботой, профессионализмом и индивидуальным подходом. В HealthKeys  мы понимаем, насколько важно ваше благополучие, и делаем всё возможное, чтобы обеспечить вам лучший уровень медицинского обслуживания.</p>
-              
-                <a href="#" class="btn">Читать далее →</a> -->
+    <div class="main_block" id="main">
+  <div class="main_container">
+    <div class="consult">
+      <div class="text">
+        <h1>Виртуальное медицинское обслуживание для вас</h1>
+        <p>Советы для здоровья и фитнеса: ключ к активной жизни</p>
+        <button onclick="goToWhatsApp()" class="whatsapp-button">
+          Проконсультироваться
+        </button>
+      </div>
+      <div class="photo">
+        <img src="img/illustration.png" alt="photo">
+      </div>
+    </div>
+  </div>
+</div>
 
-                <div class="welcome">
+  
+                 <div class="welcome-section" id="about_us">
                     <div class="container">
-                      <div class="med_woman">
-                        <img src="img/medwoman.png" alt="womanpnj">
-                      </div>
-                      <div class="aboutus">
-                        <p class="aboutusp">About us</p>
-                        <h2>Добро пожаловать в HealthKeys</h2>
+                      <div class="med-content">
+                        
+                        <div class="aboutus">
+                          <p class="aboutusp">About us</p>
+                          <h2>Добро пожаловать в <span>HealthKeys</span></h2>
+                          <p>
+                            Ваше здоровье – наш главный приоритет. Мы предоставляем медицинскую помощь с заботой, профессионализмом и индивидуальным подходом.
+                          </p>
                   
-                        <p>
-                          Добро пожаловать в HealthKeys! Ваше здоровье – наш главный приоритет. Мы стремимся предоставить качественную медицинскую помощь с заботой, профессионализмом и индивидуальным подходом.
-                        </p>
-
-                       
-                        <div id="moreText" style="display: none;">
-                          <p>
-                            В HealthKeys мы понимаем, насколько важно ваше благополучие, и делаем всё возможное, чтобы обеспечить вам лучший уровень медицинского обслуживания.
-                          </p>
-                          <p>
-                            Наша команда врачей использует передовые методы диагностики и лечения, предоставляя каждому пациенту персонализированный подход в комфортной и безопасной обстановке.
-                          </p>
+                          <div id="moreText" style="display: none;">
+                            <p>Мы делаем всё, чтобы обеспечить лучший уровень медицинского обслуживания.</p>
+                            <p>Команда врачей использует передовые методы диагностики и лечения.</p>
+                          </div>
+                  
+                          <button onclick="toggleText()" class="btn">Читать далее →</button>
                         </div>
+                      </div>
                   
-                        <button onclick="toggleText()" class="btn">Читать далее →</button>
+                      <div class="features">
+                       
+                        <div class="feature">
+                          <i class="fas fa-user-md"></i>
+                          <img src="img/pro.jpg" alt="pro med">
+                          <h4>Профессионалы</h4>
+                          <p>Опытные врачи с международной практикой.</p>
+                          <p class="more-text" style="display: none;">
+                            Наши специалисты прошли обучение и стажировки в ведущих клиниках мира. Они обладают обширными знаниями и опытом в различных областях медицины, что позволяет им эффективно решать даже самые сложные клинические случаи.
+                          </p>
+                          
+                          <a href="#" class="read-more">Читать далее →</a>
+            
+                        </div>
+                        <div class="feature">
+                          <i class="fas fa-microscope"></i>
+                          <img src="img/technologies.jpg" alt="technologies">
+                          <h4>Технологии</h4>
+                          <p>Современное оборудование и подходы.</p>
+                          <p class="more-text" style="display: none;">
+                            Мы применяем самые современные медицинские технологии — от цифровой диагностики до роботизированной хирургии. Это позволяет проводить обследования и лечение с высокой точностью, минимизируя дискомфорт для пациента.
+                          </p>
+                          
+                          <a href="#" class="read-more">Читать далее →</a>
+            
+                        </div>
+                        <div class="feature">
+                          <i class="fas fa-hand-holding-medical"></i>
+                          <img src="img/individ.jpg" alt="individ">
+                          <h4>Забота</h4>
+                          <p>Индивидуальный подход к каждому.</p>
+                          <p class="more-text" style="display: none;">
+                            В центре внимания каждого члена нашей команды — человек. Мы выстраиваем доверительные отношения, внимательно слушаем и подбираем решения, которые наилучшим образом соответствуют индивидуальным потребностям и особенностям пациента.
+                          </p>
+                          
+                          <a href="#" class="read-more">Читать далее →</a>
+            
+                        </div>
                       </div>
                     </div>
                   </div>
                   
-                <!-- <div class="accordion">
-                    <div class="accordion_item">
-                        <div class="accordion_button">Что из себя представляет Netflix?</div>
-                        <div class="accordion_content">
-                            <p> Наша команда врачей и специалистов использует современные методы диагностики и лечения, 
-                                чтобы предложить вам эффективные решения для поддержания здоровья. Мы стремимся 
-                                создать комфортную и доверительную атмосферу, в которой каждый пациент чувствует себя 
-                                уверенно и спокойно. Обращаясь в HealthKeys, вы получаете не просто медицинское обслуживание, 
-                                а комплексный подход к вашему здоровью и заботу на каждом этапе.</p>
-                        </div>
-                    </div>
-        
-            </div> -->
+      
         </div>
             
     </div>
 </div>
 </div>
-    <div class="service">
+    <div class="service" id="our_services">
         <div class="container">
-            <h1>Наши сервисы</h1>
-            <div class="line"></div>
-            <p>Мы предлагаем вам лучший выбор. Подберите его в соответствии с вашими потребностями в области здравоохранения и убедитесь, что вы проходите лечение у наших высококвалифицированных врачей. Вы можете проконсультироваться с нами о том, какой вид услуг подходит для вашего здоровья</p>
+          <h1>Наши сервисы</h1>
+          <div class="line"></div>
+          <p>Мы предлагаем вам лучший выбор. Подберите его в соответствии с вашими потребностями в области здравоохранения и убедитесь, что вы проходите лечение у наших высококвалифицированных врачей. Вы можете проконсультироваться с нами о том, какой вид услуг подходит для вашего здоровья</p>
             <div class="our_services">
                 <nav>
                     <img src="img/lupa.svg" alt="lupa">
@@ -148,14 +169,14 @@
                     <p>
                         Отслеживайте и сохраняйте свою полную медицинскую историю и важные данные о здоровье, чтобы обеспечить качественный уход, точные диагнозы и персонализированные рекомендации для вашего благополучия.</p>
                 </nav>
-                <button>Читать далее</button>
+        
             </div>
             
         </div>
     </div>
 
 
-<div class="apps">
+<div class="fitness" id="fitness">
     <div class="container">
        <nav>
         <div class="block1">
@@ -166,7 +187,22 @@
                 <h2>Советы для здоровья и фитнеса: ключ к активной жизни</h2>
                 <p>
                     Забота о здоровье и физической форме — залог долгой и энергичной жизни. Регулярные тренировки укрепляют мышцы, улучшают выносливость и помогают поддерживать оптимальный вес. Полноценное питание обеспечивает организм всеми необходимыми веществами, способствуя хорошему самочувствию. Важно соблюдать водный баланс, выпивая достаточное количество чистой воды в течение дня. Качественный сон играет ключевую роль в восстановлении и снижении стресса. Не забывайте про разминку</p>
-                    <input type="submit" value ="Читать далее">
+                    <span id="moreText" style="display: none;">
+                      Полноценное питание обеспечивает организм всеми необходимыми веществами, способствуя хорошему самочувствию. Важно соблюдать водный баланс, выпивая достаточное количество чистой воды в течение дня. 
+                      <br><br>
+                      Утренние зарядки и разминка перед тренировками помогают снизить риск получения травм и подготовить организм к нагрузкам. Здоровый сон не только восстанавливает силы, но и поддерживает иммунитет. Старайтесь спать не менее 7–8 часов в сутки. 
+                      <br><br>
+                      Также важно следить за уровнем стресса — практикуйте дыхательные упражнения, медитации или просто уделяйте время прогулкам на свежем воздухе. Психоэмоциональное здоровье неотъемлемо связано с физическим состоянием. 
+                      <br><br>
+                      При возможности, проконсультируйтесь с врачом или фитнес-инструктором для составления индивидуальной программы. Выбирайте разнообразные виды активности — от йоги и плавания до силовых тренировок, чтобы избежать однообразия. 
+                      <br><br>
+                      Питайтесь сбалансировано: включайте в рацион овощи, белки, сложные углеводы и здоровые жиры. Исключите чрезмерное потребление сахара, соли и обработанных продуктов. 
+                      <br><br>
+                      Главное — слушайте своё тело, соблюдайте режим дня, и не забывайте, что здоровье — это не только отсутствие болезни, но и полное физическое, душевное и социальное благополучие.
+                    </span>
+                  </p>
+                  <button class="btn" onclick="toggleText()">Читать далее</button>
+                    
             </div>
         </div>
       <div class="block2">
@@ -191,7 +227,7 @@
     </div>
 </div>
 
-<footer>
+<footer id="contacts">
     <div class="container">
         <div class="healthkeys1">
         <div class="healthkeys">
@@ -200,26 +236,25 @@
         </div>
         <p>HealthKeys обеспечивает прогрессивное медицинское обслуживание, доступное для всех </p>
     </div>
-    <div class="company">
-        <h2>Company</h2>
-        <li>About</li>
-        <li>Testimonials</li>
-        <li>Find a Doctor</li>
-        <li>huinya</li>
-    </div>
+   
     <div class="region">
         <h2>Region</h2>
-        <li>Kazakhstan</li>
-        <li>Kyrgyzstan</li>
-        <li>China</li>
-        <li>Ukraine</li>
+        <li>Astana</li>
+        <li>Almaty</li>
+        <li>Kokshetau</li>
+        <li>Shuchinsk</li>
+    </div>
+    <div class="region">
+        <h2>Adress</h2>
+        <li>Studencheskaya 7/1</li>
+        <li>Zhenis 67</li>
+        <li>Tauelsizdik 19/2</li>
+        <li>Respublika 8</li>
     </div>
     <div class="help">
         <h2>Help</h2>
-        <li>Help center</li>
-        <li>Contact support</li>
-        <li> Instructions </li>
-        <li>How to use</li>
+        <li>+7 777 777 7777</li>
+        <li>healthkeys@gmail.com</li>
     </div>
 
     </div>
@@ -228,4 +263,4 @@
 <script src="js/js.js"></script>
 
 </body>
-</html>
+</html> 

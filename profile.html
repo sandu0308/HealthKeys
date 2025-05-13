@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Личный кабинет</title>
+  <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="#"><img src="img/logo.svg" alt="logo"></a>
+  </div>
+  <menu>
+    <li><a href="index.html">Главная</a></li>
+    <!-- <li><a href="registration.html">Регистрация</a></li> -->
+    <li><a href="index.html">О нас</a></li>
+    <li><a href="index.html">Наши сервисы</a></li>
+    <li><a href="index.html">Фитнес и здоровье</a></li>
+    <li> <a href="index.html">Контакты</a></li>
+  </menu>
+</header>
+
+<section class="profile">
+  <div class="profile-container">
+    <div class="profile-header">
+      <div>
+        <h2 id="profileName">Имя Пользователя</h2>
+        <p id="profileEmail" class="email-display">user@example.com</p>
+      </div>
+      <button id="editBtn" type="button" class="edit-btn">Редактировать</button>
+      <button id="logoutBtn" class="logout-btn">Выйти</button>
+
+    </div>
+
+    <form id="profileForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Полное имя</label>
+          <input type="text" name="fullName" disabled />
+        </div>
+        <div class="form-group">
+          <label>Ник</label>
+          <input type="text" name="username" disabled />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Пол</label>
+          <input type="text" name="gender" disabled />
+        </div>
+        <div class="form-group">
+          <label>Страна</label>
+          <input type="text" name="country" disabled />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Язык</label>
+          <input type="text" name="language" disabled />
+        </div>
+        <div class="form-group">
+          <label>Часовой пояс</label>
+          <input type="text" name="timezone" disabled />
+        </div>
+      </div>
+
+      <div class="email-section">
+        <h3>Мой Email</h3>
+        <p id="emailField">user@example.com</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<script src="js/js.js"></script>
+
+</body>
+</html>
