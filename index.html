@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="title">HealthKeys</title>
+  <link rel="stylesheet" href="css/app.css" />
+  <link rel="icon" href="img/healthkeys_favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="#"><img src="img/healthkeys_logo.svg" alt="HealthKeys logo" /></a>
+    </div>
+    <div class="burger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+    <menu id="mainMenu">
+      <li><a href="#" data-i18n="menu.home"></a></li>
+      <li><a href="#" onclick="goToProfile()" data-i18n="menu.profile"></a></li>
+      <li><a href="#about_us" data-i18n="menu.about"></a></li>
+      <li><a href="#our_services" data-i18n="menu.services"></a></li>
+      <li><a href="#fitness" data-i18n="menu.fitness"></a></li>
+      <li><a href="#contacts" data-i18n="menu.contacts"></a></li>
+    </menu>
+    <select class="change-lang">
+      <option value="kk">ҚАЗ</option>
+      <option value="ru">РУС</option>
+      <option value="en">ENG</option>
+    </select>
+  </header>
+
+  <div class="main_block" id="main">
+    <div class="main_container">
+      <div class="consult">
+        <div class="text">
+          <h1 data-i18n="main.title"></h1>
+          <p data-i18n="main.subtitle"></p>
+          <button onclick="goToWhatsApp()" class="whatsapp-button" data-i18n="main.button"></button>
+        </div>
+        <div class="photo">
+          <img src="img/illustration.png" alt="photo" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="welcome-section" id="about_us">
+    <div class="container">
+      <div class="med-content">
+        <div class="aboutus">
+          <p class="aboutusp" data-i18n="about.tag"></p>
+          <h2 data-i18n="about.welcome"></h2>
+          <p data-i18n="about.text"></p>
+          <div id="moreText" style="display: none;">
+            <p data-i18n="about.more1"></p>
+            <p data-i18n="about.more2"></p>
+          </div>
+          <button onclick="toggleText()" class="btn" data-i18n="about.readmore"></button>
+        </div>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <img src="img/pro.jpg" alt="pro med" />
+          <h4 data-i18n="feature1.title"></h4>
+          <p data-i18n="feature1.desc"></p>
+          <p class="more-text" data-i18n="feature1.more" style="display: none;"></p>
+          <a href="#" class="read-more" data-i18n="about.readmore"></a>
+        </div>
+        <div class="feature">
+          <img src="img/technologies.jpg" alt="technologies" />
+          <h4 data-i18n="feature2.title"></h4>
+          <p data-i18n="feature2.desc"></p>
+          <p class="more-text" data-i18n="feature2.more" style="display: none;"></p>
+          <a href="#" class="read-more" data-i18n="about.readmore"></a>
+        </div>
+        <div class="feature">
+          <img src="img/individ.jpg" alt="individ" />
+          <h4 data-i18n="feature3.title"></h4>
+          <p data-i18n="feature3.desc"></p>
+          <p class="more-text" data-i18n="feature3.more" style="display: none;"></p>
+          <a href="#" class="read-more" data-i18n="about.readmore"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="service" id="our_services">
+    <div class="container">
+      <h1 data-i18n="services.title"></h1>
+      <div class="line"></div>
+      <p data-i18n="services.description"></p>
+      <div class="our_services">
+        <nav>
+          <img src="img/lupa.svg" alt="doctor">
+          <h2 data-i18n="services.doctor.title"></h2>
+          <p data-i18n="services.doctor.text"></p>
+        </nav>
+        <nav>
+          <img src="img/bottle.svg" alt="supplements">
+          <h2 data-i18n="services.supplements.title"></h2>
+          <p data-i18n="services.supplements.text"></p>
+        </nav>
+        <nav>
+          <img src="img/anketa.svg" alt="consult">
+          <h2 data-i18n="services.consult.title"></h2>
+          <p data-i18n="services.consult.text"></p>
+        </nav>
+        <nav>
+          <img src="img/papka.svg" alt="fitness">
+          <h2 data-i18n="services.fitness.title"></h2>
+          <p data-i18n="services.fitness.text"></p>
+        </nav>
+        <nav>
+          <img src="img/bag.svg" alt="urgent">
+          <h2 data-i18n="services.urgent.title"></h2>
+          <p data-i18n="services.urgent.text"></p>
+        </nav>
+        <nav>
+          <img src="img/Group (1).svg" alt="monitoring">
+          <h2 data-i18n="services.monitoring.title"></h2>
+          <p data-i18n="services.monitoring.text"></p>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="fitness" id="fitness">
+  <div class="container">
+    <nav>
+      <div class="block1">
+        <div class="photo1">
+          <img src="img/trafalgar-illustration sec02 1.png" alt="photo1">
+        </div>
+        <div class="photo2">
+          <h2 data-i18n="fitness.block1.title"></h2>
+          <p data-i18n="fitness.block1.text"></p>
+        </div>
+      </div>
+      <div class="block2">
+        <div class="photo3">
+          <h2 data-i18n="fitness.block2.title"></h2>
+          <p data-i18n="fitness.block2.text"></p>
+        </div>
+        <div class="photo4">
+          <img src="img/trafalgar-illustration sec03 1.png" alt="photo2">
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
+  <footer id="contacts">
+    <div class="container">
+      <div class="healthkeys1">
+        <div class="healthkeys">
+          <div class="logotip"></div>
+          <h2>HealthKeys</h2>
+        </div>
+        <p data-i18n="footer.desc"></p>
+      </div>
+      <div class="region">
+        <h2 data-i18n="footer.region"></h2>
+        <li>Astana</li>
+        <li>Almaty</li>
+        <li>Kokshetau</li>
+        <li>Shuchinsk</li>
+      </div>
+      <div class="region">
+        <h2 data-i18n="footer.address"></h2>
+        <li>Studencheskaya 7/1</li>
+        <li>Zhenis 67</li>
+        <li>Tauelsizdik 19/2</li>
+        <li>Respublika 8</li>
+      </div>
+      <div class="help">
+        <h2 data-i18n="footer.help"></h2>
+        <li>+7 777 777 7777</li>
+        <li>healthkeys@gmail.com</li>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/js.js"></script>
+  <script src="js/lang.js"></script>
+</body>
+</html>
