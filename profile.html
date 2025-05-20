@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-i18n="profile"></title>
+  <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+      <a href="#"><img src="img/healthkeys_logo.svg" alt="HealthKeys logo" /></a>
+    </div>
+  <menu>
+    <li><a href="index.html" data-i18n="home"></a></li>
+    <li><a href="index.html#about_us" data-i18n="about_us"></a></li>
+    <li><a href="index.html#our_services" data-i18n="services"></a></li>
+    <li><a href="index.html#fitness" data-i18n="fitness"></a></li>
+    <li><a href="index.html#contacts" data-i18n="contacts"></a></li>
+    <div class="language-switcher">
+      <select class="change-lang">
+        <option value="kk">ҚАЗ</option>
+        <option value="ru">РУС</option>
+        <option value="en">ENG</option>
+      </select>
+    </div>
+  </menu>
+</header>
+
+<section class="profile">
+  <div class="profile-container">
+    <div class="profile-header">
+      <div>
+        <h2 id="profileName"></h2>
+        <p id="profileEmail" class="email-display"></p>
+      </div>
+      <button id="editBtn" type="button" class="edit-btn" data-i18n="edit"></button>
+      <button id="logoutBtn" class="logout-btn" data-i18n="logout"></button>
+    </div>
+
+    <form id="profileForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label data-i18n="full_name"></label>
+          <input type="text" name="fullName" disabled />
+        </div>
+        <div class="form-group">
+          <label data-i18n="username"></label>
+          <input type="text" name="username" disabled />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label data-i18n="gender"></label>
+          <input type="text" name="gender" disabled />
+        </div>
+        <div class="form-group">
+          <label data-i18n="country"></label>
+          <input type="text" name="country" disabled />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label data-i18n="language"></label>
+          <input type="text" name="language" disabled />
+        </div>
+        <div class="form-group">
+          <label data-i18n="timezone"></label>
+          <input type="text" name="timezone" disabled />
+        </div>
+      </div>
+
+      <div class="email-section">
+        <h3 data-i18n="my_email"></h3>
+        <p id="emailField"></p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<script src="js/lang.js"></script>
+<script src="js/js.js"></script>
+
+</body>
+</html>
