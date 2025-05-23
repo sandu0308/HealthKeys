@@ -1171,6 +1171,128 @@ footer .container .help li{
   cursor: pointer;
 }
 
+.universal-button{
+ border-radius: 55px;
+    background: rgb(69, 143, 246);
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top:15px;
+    padding-bottom: 15px;
+    margin-top: 30px;
+}
+
+.diet{
+    width: 100%;
+    height: 100vh;
+    padding-top: 90px;
+    padding-bottom: 70px;
+    background: linear-gradient(177.42deg, rgb(243, 247, 255) -10.485%,rgb(222, 238, 254) 92.662%);
+    display: flex;
+    
+}
+
+.diet .container{
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.diet .container h1{
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 26px;
+
+}
+
+.diet .container .line{
+    width: 56px;
+    height: 2px;
+    border-radius: 5px;
+    background: rgb(0, 0, 0);
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.diet .container >p{
+    color: rgb(125, 121, 135);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    width: 100%;
+
+    margin-right:  auto;
+    margin-left:  auto;
+    margin-top: 60px;
+}
+
+.fitblock {
+  padding: 100px 0;
+  background: #f7fafe;
+  text-align: center;
+}
+
+.fitblock .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fitblock h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.fitblock p {
+  color: #777;
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.fitblock-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.fitblock-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  padding: 30px;
+  max-width: 270px;
+  flex: 1 1 270px;
+  transition: transform 0.3s ease;
+}
+
+.fitblock-card:hover {
+  transform: translateY(-5px);
+}
+
+.fitblock-card img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 20px;
+}
+
+.fitblock-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.fitblock-card p {
+  font-size: 16px;
+  color: #555;
+}
+
 
 @media (max-width: 768px) {
   header {
@@ -1355,3 +1477,77 @@ footer .container .help li{
     }
   }
   
+@media (max-width: 768px) {
+  .diet {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .diet .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .diet .container h1 {
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .diet .container .line {
+    margin: 20px auto;
+  }
+
+  .diet .container > p {
+    font-size: 16px;
+    line-height: 28px;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    margin-top: 30px;
+    white-space: normal;
+  }
+}
+@media (max-width: 768px) {
+  .fitblock {
+    padding: 60px 0;
+  }
+
+  .fitblock h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .fitblock p {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  .fitblock-grid {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .fitblock-card {
+    max-width: 90%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .fitblock-card img {
+    max-width: 64px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .fitblock-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .fitblock-card p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
