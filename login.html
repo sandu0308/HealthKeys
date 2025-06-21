@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="kz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="login">Login</title>
+  <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+
+  <header>
+     <div class="logo">
+      <a href="#"><img src="img/healthkeys_logo.svg" alt="HealthKeys logo" /></a>
+    </div>
+    <menu>
+      <li><a href="index.html#main" data-i18n="home">Главная</a></li>
+      <li><a href="registration.html" data-i18n="register">Регистрация</a></li>
+      <li><a href="index.html#about_us" data-i18n="about_us">О нас</a></li>
+      <li><a href="index.html#our_services" data-i18n="services">Наши сервисы</a></li>
+      <li><a href="index.html#fitness" data-i18n="fitness">Фитнес и здоровье</a></li>
+    <select class="change-lang">
+      <option value="kk">ҚАЗ</option>
+      <option value="ru">РУС</option>
+      <option value="en">ENG</option>
+    </select>
+    </menu>
+  </header>
+
+  <div class="login">
+    <div class="container_login">
+      <form action="#" class="login-form">
+        <div class="text" data-i18n="login">Вход</div>
+
+        <div class="data">
+          <label data-i18n="email_or_phone">Email или телефон</label>
+          <input type="email" name="email" required />
+        </div>
+
+        <div class="data">
+          <label data-i18n="password">Пароль</label>
+          <input type="password" name="password" required />
+        </div>
+
+        <div class="forgot-pass">
+          <a href="forgot-password.html" data-i18n="forgot_password">Забыли пароль?</a>
+        </div>
+
+        <div class="btn">
+          <div class="inner"></div>
+          <button type="submit" data-i18n="login">Войти</button>
+        </div>
+
+        <div class="signup-link">
+          <span data-i18n="no_account">Нет аккаунта?</span> <a href="registration.html" data-i18n="register">Зарегистрируйтесь</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/lang.js"></script>
+  <script src="js/js.js"></script>
+</body>
+</html>
